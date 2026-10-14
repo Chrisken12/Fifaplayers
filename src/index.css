@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #181b17;
+  background: #f4f4ef;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f4f4ef;
+}
+.showcase-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 90% 0%, #e5eddf 0, transparent 34%), #f4f4ef;
+}
+.showcase-header {
+  padding-top: 26px;
+}
+.eyebrow,
+.player-kicker,
+.showcase-footer {
+  letter-spacing: 0.16em;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+.eyebrow {
+  color: #51714c;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.eyebrow span {
+  width: 22px;
+  height: 2px;
+  background: #81a77a;
+  display: inline-block;
+}
+.showcase-header h1 {
+  font:
+    700 clamp(3.2rem, 8vw, 6.4rem)/1 "Playfair Display",
+    Georgia,
+    serif;
+  letter-spacing: -0.055em;
+  margin: 22px 0 12px;
+}
+.showcase-header h1 em {
+  color: #63865d;
+  font-weight: 600;
+}
+.showcase-header > p {
+  color: #73776f;
+  font-size: 1.05rem;
+}
+.player-card {
+  background: #fff;
+  box-shadow: 0 12px 36px #25351b0d;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.player-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 42px #25351b1b;
+}
+.player-photo-wrap {
+  height: 225px;
+  position: relative;
+  overflow: hidden;
+  background: #dce3d7;
+}
+.player-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+.player-card:hover .player-photo {
+  transform: scale(1.04);
+}
+.jersey-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  border-radius: 99px;
+  padding: 7px 12px;
+  color: #fff;
+  background: #577750;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.player-card .card-body {
+  padding: 20px;
+}
+.player-kicker {
+  color: #82947c;
+  margin: 0 0 7px;
+  font-size: 0.58rem;
+}
+.player-name {
+  font:
+    700 1.45rem/1.2 "Playfair Display",
+    Georgia,
+    serif;
+  margin-bottom: 4px;
+}
+.team-name {
+  font-size: 0.88rem;
+  color: #70756c;
+  margin-bottom: 19px;
+}
+.player-details {
+  display: grid;
+  grid-template-columns: 1.35fr 0.55fr 0.7fr;
+  gap: 7px;
+  border-top: 1px solid #ecede9;
+  padding-top: 14px;
+}
+.player-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.player-details span {
+  color: #999d95;
+  font-size: 0.64rem;
+}
+.player-details strong {
+  color: #343a32;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+.showcase-footer {
+  color: #9a9e95;
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 16px;
+  font-size: 0.61rem;
+}
+.showcase-footer span {
+  color: #799872;
+  padding-left: 5px;
+}
+@media (max-width: 575px) {
+  .showcase-header {
+    padding-top: 8px;
+  }
+  .showcase-header h1 {
+    font-size: 3.3rem;
+  }
+  .player-photo-wrap {
+    height: 245px;
+  }
+}
